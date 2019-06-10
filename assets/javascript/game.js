@@ -41,11 +41,17 @@ document.onkeyup = function gamestart() {
             } 
             
         }
+        // this is supposed to update the counter of guesses remaining
         if (currentClickGuess !== "g" || "h" || "o" || "s" || "t" || "b" || "l" || "i" || "n" || "w" || "t" || "c" || "h"){
             document.getElementById("lifes-Number").innerHTML = guessesRemaining--;
         }
-    }
+        // this is supposed to reload the page if the user accurately guesses the first word.
+        if (answerArr === randWord){
+            location.reload();
+        }
 
+    }
+    
 };
 
 
