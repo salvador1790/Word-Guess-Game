@@ -39,7 +39,9 @@ document.onkeyup = function gamestart() {
                 document.getElementById("word-div").innerHTML = answerArr.join(' ');
                 audio.play();
             } 
-        
+            else if (currentClickGuess !== randWord[i]){
+                document.getElementById("lifes-Number").innerHTML = guessesRemaining--;
+            }
         }
     
     }
