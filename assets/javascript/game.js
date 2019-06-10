@@ -39,11 +39,11 @@ document.onkeyup = function gamestart() {
                 document.getElementById("word-div").innerHTML = answerArr.join(' ');
                 audio.play();
             } 
-            else if (currentClickGuess !== randWord[i]){
-                document.getElementById("lifes-Number").innerHTML = guessesRemaining--;
-            }
+            
         }
-    
+        if (currentClickGuess !== "g" || "h" || "o" || "s" || "t" || "b" || "l" || "i" || "n" || "w" || "t" || "c" || "h"){
+            document.getElementById("lifes-Number").innerHTML = guessesRemaining--;
+        }
     }
 
 };
