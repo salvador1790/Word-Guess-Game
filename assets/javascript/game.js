@@ -31,12 +31,13 @@ document.onkeyup = function gamestart() {
     // this function grabs the user guess and compares to the random word generated and displays the letter if correct.
     document.onkeyup = function () {
         var currentClickGuess = event.key;
+        // this is supposed to push the current clicks as already guessed letters
+        document.getElementById("guessed-letters").innerHTML = currentClickGuess;
         for (var i = 0; i < leftToGuess; i++) {
             if (currentClickGuess === randWord[i]) {
                 answerArr[i] = currentClickGuess;
                 document.getElementById("word-div").innerHTML = answerArr.join(' ');
                 audio.play();
-                document.getElementById("guessed-letters").innerHTML= currentClickGuess;
             } 
         
         }
