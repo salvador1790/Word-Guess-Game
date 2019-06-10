@@ -1,0 +1,42 @@
+body{
+    background-image: url("../images/8bitpacmanghosts-480818.jpeg");
+    color: white;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+}
+
+#word-div{
+    font-size: 50px;
+}
+
+#title{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: purple;
+    text-shadow: 4px 4px 12px #FF0000;
+    font-size: 40px;
+}
+
+h1{
+    margin-top: 0;
+}
+
+#guessed{
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+#lifes{
+    margin-top: 70px;
+    font-size: 20px;
+}
+#start{
+    font-size: 20px;
+}
+
+#wins{
+    margin-top: 70px;
+    font-size: 20px;
+}
